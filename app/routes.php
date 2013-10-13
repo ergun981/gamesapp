@@ -13,16 +13,16 @@
 |
 */
 
-// Bind route parameters.
+// Rota parametrelerini bağla.
 Route::model('game', 'Game');
 
-// Show pages.
+// Sayfaları göster.
 Route::get('/', 'GamesController@index');
 Route::get('/create', 'GamesController@create');
 Route::get('/edit/{game}', 'GamesController@edit');
 Route::get('/delete/{game}', 'GamesController@delete');
 
-// Handle form submissions.
+// Form gönderimlerini işle.
 Route::post('/create', 'GamesController@handleCreate');
 Route::post('/edit', 'GamesController@handleEdit');
 Route::post('/delete', 'GamesController@handleDelete');
