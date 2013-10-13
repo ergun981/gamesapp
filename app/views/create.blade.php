@@ -2,25 +2,24 @@
 
 @section('content')
     <div class="page-header">
-        <h1>Create Game <small>and someday finish it!</small></h1>
+        <h1>Oyun Oluştur<small> ve günün birinde tamamla!</small></h1>
     </div>
 
     <form action="{{ action('GamesController@handleCreate') }}" method="post" role="form">
         <div class="form-group">
-            <label for="title">Title</label>
+            <label for="title">Adı</label>
             <input type="text" class="form-control" name="title" />
         </div>
         <div class="form-group">
-            <label for="publisher">Publisher</label>
+            <label for="publisher">Yayıncısı</label>
             <input type="text" class="form-control" name="publisher" />
         </div>
         <div class="checkbox">
             <label for="complete">
-                <input type="checkbox" name="complete" /> Complete?
-            </label>
+                <input type="checkbox" name="complete" /> Tamamlandı mı?
         </div>
-        <input type="submit" value="Create" class="btn btn-primary" />
-        <a href="{{ action('GamesController@index') }}" class="btn btn-link">Cancel</a>
+        <input type="submit" value="Oluştur" class="btn btn-primary" />
+        <a href="{{ action('GamesController@index') }}" class="btn btn-link">İptal</a>
     </form>
 @stop
 
