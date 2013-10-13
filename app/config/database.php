@@ -57,7 +57,7 @@ return array(
 			'host'      => 'localhost',
 			'database'  => 'games',
 			'username'  => 'root',
-			'password'  => 'wimble',
+			'password'  => 'falanfilan',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
